@@ -1359,6 +1359,16 @@ Peut définir une zone au sens physique ou théorique</rdfs:comment>
     
 
 
+    <!-- http://www.opensilex.org/vocabulary/oeso#ImagingStation -->
+
+    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#ImagingStation">
+        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#Vector"/>
+        <rdfs:label xml:lang="fr">cabine</rdfs:label>
+        <rdfs:label xml:lang="en">imaging station</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.opensilex.org/vocabulary/oeso#Infrastructure -->
 
     <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#Infrastructure">
@@ -1885,7 +1895,6 @@ Peut définir une zone au sens physique ou théorique</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
         <dc:source>skos:exactMatch http://www.ontobee.org/ontology/rdf/PO?iri=http://purl.obolibrary.org/obo/PO_0009010</dc:source>
         <rdfs:comment xml:lang="en">A multi-tissue plant  structure (PO:0025496) that develops from a plant ovule   (PO:0020003) and has as parts a plant embryo (PO:0009009)  enclosed in a seed coat (PO:0009088). [database_cross_reference: POC:curators]</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Structure végétale multi-tissulaire (PO:0025496) qui se développe à partir d&apos;un ovule (PO:0020003) et contient l&apos;embryon (PO:0009009) qui est protégé par un tégument (PO:0009088).</rdfs:comment>
         <rdfs:label xml:lang="fr">graine</rdfs:label>
         <rdfs:label xml:lang="en">seed</rdfs:label>
     </owl:Class>
@@ -2305,90 +2314,6 @@ measured spectral hemispheric directional reflectance percent for each wavelengt
     
 
 
-    <!-- http://www.opensilex.org/vocabulary/oeso#ear -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#ear">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <dc:source>&lt;http://www.w3.org/2008/05/skos#broader&gt;&lt;http://purl.obolibrary.org/obo/PO_0020136&gt;</dc:source>
-        <dc:source>&lt;http://www.w3.org/2008/05/skos#broader&gt;&lt;http://purl.obolibrary.org/obo/PO_0025597&gt;</dc:source>
-        <rdfs:comment xml:lang="en">In Zea genus :
-- either an ear inflorescence (PO:0020136) that is a pistillate inflorescence (PO:0025598), highly compacted and bearing the ear spikelets (PO:0006320) on a lateral inflorescence axis (PO:0020122)
-- either an ear infructescence (PO:0025597), bearing kernels (i.e. caryopsis fruit PO:0030104) on a compact ear infructescence axis (PO:0025623) and developping from the ear inflorescence (PO:0020136)</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Inflorescence ou infruitescence femelle pour le genre Zea.</rdfs:comment>
-        <rdfs:label xml:lang="en">ear</rdfs:label>
-        <rdfs:label xml:lang="fr">épi</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.opensilex.org/vocabulary/oeso#grain -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#grain">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <dc:source>skos:exactMatch http://purl.obolibrary.org/obo/PO_0030104</dc:source>
-        <rdfs:comment xml:lang="en">Caryopsis fruit (PO:0030104) is characteristic of the Poaceae (the grass family). Caryopsis fruits develop from a pseudomonomerous gyneocium (PO:0009062), and contain only a single seed due to the abortion of two of the three carpels (PO:0009030). The pericarp of caryopsis fruits of some bamboo species is somewhat fleshy at maturity and is fused to the seed coat; these fruits are referred to in the literature as bacoid caryopses. Examples: barley (Hordeum vulgare), rice (Oryza spp.), wheat (Triticum spp.), corn (Zea mays), sorghum (Sorghum bicolor), oat (Avena spp.), zebra grass (Miscanthus spp.), Tausch’s goatgrass (Aegilops tauschii), stiff brome (Brachypodium distachyon), cutgrass (Leersia perrieri), and foxtail millet (Setaria italica).</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">A fruit (PO:0009001) which develops from a gynoecium (PO:0009062) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086) that are fused to a seed coat (PO:0009088).</rdfs:isDefinedBy>
-        <rdfs:isDefinedBy xml:lang="fr">Un caryopse (PO:0030104) est un fruit (PO:0009001) qui se développe à partir d&apos;un pistil (PO:0009062) et qui à maturité comprend un épicarpe (PO:0009085) sec, un mésocarpe (PO:0009087) sec et un endocarpe (PO:0009086) sec qui sont soudés au tégument (PO:0009088).</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">grain</rdfs:label>
-        <rdfs:label xml:lang="fr">grain</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Plant Ontology term : caryopsis fruit</rdfs:seeAlso>
-        <rdfs:seeAlso xml:lang="en">kernel</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://www.opensilex.org/vocabulary/oeso#spikelet -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#spikelet">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <dc:source>skos:exactMatch http://www.ontobee.org/ontology/PO?iri=http://purl.obolibrary.org/obo/PO_0009051</dc:source>
-        <rdfs:comment xml:lang="en">PO:0009051 One to many closely-packed flowers and associated glumes</rdfs:comment>
-        <rdfs:comment xml:lang="fr">PO:0009051 Regroupement de une ou plusieurs fleurs dans une enveloppe commune composée de glumes</rdfs:comment>
-        <rdfs:label xml:lang="en">spikelet</rdfs:label>
-        <rdfs:label xml:lang="fr">épillet</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.opensilex.org/vocabulary/oeso#stem -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#stem">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <dc:source>skos:exactMatch http://www.ontobee.org/ontology/PO?iri=http://purl.obolibrary.org/obo/PO_0009047</dc:source>
-        <rdfs:comment xml:lang="en">Primary shoot axis of a plant (PO:0009047)</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Tige principale de la plante (PO:0009047)</rdfs:comment>
-        <rdfs:label xml:lang="en">stem</rdfs:label>
-        <rdfs:label xml:lang="fr">tige</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.opensilex.org/vocabulary/oeso#tassel -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#tassel">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <dc:source>skos:exactMatch http://www.ontobee.org/ontology/PO?iri=http://purl.obolibrary.org/obo/PO_0020126</dc:source>
-        <rdfs:comment xml:lang="fr">Inflorescence mâle (PO:0020126)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Tassel inflorescence (PO:0020126)</rdfs:comment>
-        <rdfs:label xml:lang="fr">panicule</rdfs:label>
-        <rdfs:label xml:lang="en">tassel</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.opensilex.org/vocabulary/oeso#tiller -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#tiller">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <dc:source>skos:exactMatch http://www.ontobee.org/ontology/PO?iri=http://purl.obolibrary.org/obo/PO_0005001</dc:source>
-        <rdfs:comment xml:lang="en">Basal axillary shoot system (PO:0005001)</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Tiges principales et secondaires de la plante (PO:0005001)</rdfs:comment>
-        <rdfs:label xml:lang="fr">talle</rdfs:label>
-        <rdfs:label xml:lang="en">tiller</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
@@ -2412,8 +2337,8 @@ measured spectral hemispheric directional reflectance percent for each wavelengt
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
         <rdfs:label xml:lang="en">Contributor</rdfs:label>
-        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributor-006"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
         <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
         <terms:description xml:lang="en">Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity.</terms:description>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
@@ -2484,10 +2409,6 @@ measured spectral hemispheric directional reflectance percent for each wavelengt
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
-<<<<<<< HEAD
-=======
-        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#language-007"/>
->>>>>>> ebc605d568caf6f79f5a2c6f1d1c7ad47bb92d20
         <rdfs:label xml:lang="en">Language</rdfs:label>
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#language-007"/>
         <terms:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].</terms:description>
@@ -2496,8 +2417,8 @@ measured spectral hemispheric directional reflectance percent for each wavelengt
         <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc4646.txt"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
-        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisher-006"/>
         <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisher-006"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:label xml:lang="en">Publisher</rdfs:label>
@@ -2574,5 +2495,5 @@ measured spectral hemispheric directional reflectance percent for each wavelengt
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
